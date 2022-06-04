@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kam</title>
+</head>
+
+<body>
+    <div class="kammm">
+        <input id="input" type="text" class="kammm__input" />
+        <div class="kammm_aa">
+            <button id="plus">+</button>
+            <button id="mi">-</button>
+            <button id="ym">*</button>
+            <button id="del">/</button>
+            <button id="b1">1</button>
+            <button id="b2">2</button>
+            <button id="b3">3</button>
+            <button id="b0">0</button>
+            <button id="b4">4</button>
+            <button id="b5">5</button>
+            <button id="b6">6</button>
+            <button id= "bc">c</button>
+            <button id="b7">7</button>
+            <button id="b8">8</button>
+            <button id="b9">9</button>
+            <button id="result">=</button>
+        </div>
+    </div>
+
+</body>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .kammm_aa {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        width: 200px;
+        height: 100px;
+    }
+
+    .kammm__input {
+        width: 200px;
+        height: 30px;
+        padding-left: 5px;
+    }
+
+    .kammm {
+        font-size: 10px;
+        padding: 5px;
+        background-color: rgb(255, 0, 217);
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 5px;
+        display: inline-block;
+
+    }
+</style>
+<script>
+    let HashNamber = 0
+    let ffffff = '0'
+    b1.onclick = () => {
+        input.value += '1' 
+    }
+    b2.onclick = () => {
+        input.value += '2'
+    }
+    b3.onclick = () => {
+        input.value += '3'
+    }
+    b4.onclick = () => {
+        input.value += '4'
+    }
+    b5.onclick = () => {
+        input.value += '5'
+    }
+    b6.onclick = () => {
+        input.value += '6'
+    }
+    b7.onclick = () => {
+        input.value += '7'
+    }
+    b8.onclick = () => {
+        input.value += '8'
+    }
+    b9.onclick = () => {
+        input.value += '9'
+    }
+    b0.onclick = () => {
+        input.value += '0'
+    }
+    bc.onclick = () => {
+        input.value = ''
+        HashNumber1 = 0
+    }
+    plus.onclick = () => {
+        HashNumber1 = Number(input.value)
+        input.value = ''
+        ffffff = '+'
+    }
+    mi.onclick = () => {
+        HashNumber1 = Number(input.value)
+        input.value = ''
+        ffffff = '-'
+    
+    }
+    ym.onclick = () => {
+        HashNumber1 = Number(input.value)
+        input.value = ''
+        ffffff = '*'
+    }
+    del.onclick = () => {
+        HashNumber1 = Number(input.value)
+        input.value = ''
+        ffffff = '/'
+    }
+    result.onclick = () => {
+        if  (ffffff === '+') input.value = Number(HashNumber1) + Number(input.value)
+        if (ffffff === '-' ) input.value = HashNumber1 - Number(input.value)
+        if  (ffffff === '*') input.value = Number(HashNumber1) * Number(input.value)
+        if (ffffff === '/' ) input.value = HashNumber1 / Number(input.value)
+    }
+
+</script>
+</html>

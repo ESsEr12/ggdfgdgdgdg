@@ -1,0 +1,47 @@
+<form onsubmit="ggHandler ()" class="mainFotm">
+    <input class="textInput" id="email" type="email" />
+    <input class="textInput" id="pass" type="password" />
+    <label>
+        <input id="checkbox" type="checkbox">
+    </label>
+    <input class=""/>
+    <button class="formButton">gg</button>
+</form>
+
+<script>
+    const ggHandler = (value) => {
+        alert(`email: ${email.value} \npassword: ${pass.value} \ncheckboz: ${checkbox.checked}`)
+    }
+       
+</script>
+
+<style>
+    .mainFotm{
+        display: flex;
+        flex-direction: column;
+        margin: 10% 30%;
+        border: 1px solid darkgreen;
+        border-radius: 18px;
+        padding: 10px;
+    }
+    .textInput{
+        margin: 10px;
+        height: 64px;
+        font-style: 48px;
+        padding-left: 20px;
+    }
+    .formButton{
+        margin: 10px;
+        padding: 20px 0;
+        font-size: 102px;
+    }
+    .checkboxLadel{
+        margin: 10px;
+        font-size: 24px;
+    }
+    .checkboxLadel > input{
+        transform: scale(2);
+        margin-right: 24px;
+    }
+
+</style>
